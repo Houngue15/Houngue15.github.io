@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #020105;
-    --secondary-color: #13379c;
+    --primary-color: #00000aa1;
+    --secondary-color: #030407;
     --accent-color: #60A5FA;
     --link-color: #34D399;
     --text-color: #FFFFFF;
@@ -111,8 +111,13 @@ header .specialisation {
     margin-right: 20px;
     object-fit: contain;
     object-position: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+.presentation .photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .presentation .texte {
     flex: 1;
 }
@@ -193,6 +198,12 @@ header .specialisation {
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .projet img {
