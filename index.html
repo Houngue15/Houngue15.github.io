@@ -127,19 +127,31 @@
                     <h3>GlobExplore</h3>
                     <p>Agence de voyage</p>
                 </div>
+                <div class="projet">
+                    <img src="image/blog1.png" alt="Projet 1">
+                    <h3>Blog </h3>
+                    <p> Blog élégant</p>
+                </div>
+                <div class="projet">
+                    <img src="image/blog2.png" alt="Projet 1">
+                    <h3>Blog </h3>
+                    <p> Blog élégant</p>
+                </div>
+                <div class="projet">
+                    <img src="image/blog3.png" alt="Projet 1">
+                    <h3>Blog </h3>
+                    <p> Blog élégant</p>
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contactez-moi</h2>
             <div class="contact-container">
-                <form>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" placeholder="Entrez votre nom">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre email">
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" placeholder="Entrez votre message"></textarea>
+                <form action="mailto:pascalhoungue48@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Nom">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
                 <div class="remplissage"></div>
@@ -156,6 +168,37 @@
 
         </div>
     </footer>
+    <!-- Ajoute ceci avant la balise </body> -->
+    <script>
+        document.querySelectorAll('.projet img').forEach(img => {
+            img.addEventListener('click', () => {
+                const overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = 0;
+                overlay.style.left = 0;
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.background = 'rgba(0,0,0,0.8)';
+                overlay.style.display = 'flex';
+                overlay.style.alignItems = 'center';
+                overlay.style.justifyContent = 'center';
+                overlay.style.zIndex = 1000;
+
+                const bigImg = document.createElement('img');
+                bigImg.src = img.src;
+                bigImg.style.maxWidth = '90%';
+                bigImg.style.maxHeight = '90%';
+                bigImg.style.borderRadius = '10px';
+                bigImg.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+
+                overlay.appendChild(bigImg);
+                document.body.appendChild(overlay);
+
+                overlay.addEventListener('click', () => overlay.remove());
+            });
+        });
+    </script>
+
 </body>
 
 </html>
