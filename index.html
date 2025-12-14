@@ -126,37 +126,31 @@
                     <img src="image/explore.png" alt="Projet 3">
                     <h3>GlobExplore</h3>
                     <p>Agence de voyage</p>
-                </div>
-                <div class="projet">
-                    <img src="image/blog1.png" alt="Projet 4">
-                    <h3>Blog </h3>
-                    <p> Blog élégant</p>
-                </div>
-                <div class="projet">
-                    <img src="image/blog2.png" alt="Projet 4">
-                    <h3>Blog </h3>
-                    <p> Blog élégant</p>
-                </div>
-                <div class="projet">
-                    <img src="image/blog3.png" alt="Projet 4">
-                    <h3>Blog </h3>
-                    <p> Blog élégant</p>
-                </div>
-                <div class="projet">
-                    <img src="image/ecolemanager1.png" alt="Projet 5">
-                    <h3>EcoleManager </h3>
-                    <p> EcoleManager</p>
-                </div>
-                <div class="projet">
-                    <img src="image/ecolemanager2.png" alt="Projet 5">
-                    <h3>EcoleManager </h3>
-                    <p> EcoleManager</p>
-                </div>
-                <div class="projet">
-                    <img src="image/ecolemanager3.png" alt="Projet 5">
-                    <h3>EcoleManager </h3>
-                    <p> EcoleManager</p>
-                </div>
+                </div>  
+  <!-- Carrousel Blog -->
+  <div class="carousel">
+    <h3>Blog élégant</h3>
+    <div class="carousel-container" id="blog-carousel">
+      <img src="image/blog1.png" alt="Blog 1">
+      <img src="image/blog2.png" alt="Blog 2">
+      <img src="image/blog3.png" alt="Blog 3">
+    </div>
+    <button class="prev" onclick="prevSlide('blog-carousel')">&#10094;</button>
+    <button class="next" onclick="nextSlide('blog-carousel')">&#10095;</button>
+  </div>
+
+  <!-- Carrousel EcoleManager -->
+  <div class="carousel">
+    <h3>EcoleManager</h3>
+    <div class="carousel-container" id="ecole-carousel">
+      <img src="image/ecolemanager1.png" alt="EcoleManager 1">
+      <img src="image/ecolemanager2.png" alt="EcoleManager 2">
+      <img src="image/ecolemanager3.png" alt="EcoleManager 3">
+    </div>
+    <button class="prev" onclick="prevSlide('ecole-carousel')">&#10094;</button>
+    <button class="next" onclick="nextSlide('ecole-carousel')">&#10095;</button>
+  </div>
+
             </div>
         </section>
 
@@ -183,7 +177,7 @@
 
         </div>
     </footer>
-    <!-- Ajoute ceci avant la balise </body> -->
+    
     <script>
         document.querySelectorAll('.projet img').forEach(img => {
             img.addEventListener('click', () => {
@@ -213,6 +207,22 @@
             });
         });
     </script>
+    <script>
+function nextSlide(id) {
+  const container = document.getElementById(id);
+  container.appendChild(container.firstElementChild); // déplace la première image à la fin
+}
+
+function prevSlide(id) {
+  const container = document.getElementById(id);
+  container.insertBefore(container.lastElementChild, container.firstElementChild); // déplace la dernière image au début
+}
+
+// Optionnel : défilement automatique toutes les 3s
+setInterval(() => nextSlide('blog-carousel'), 3000);
+setInterval(() => nextSlide('ecole-carousel'), 4000);
+</script>
+
 
 </body>
 
