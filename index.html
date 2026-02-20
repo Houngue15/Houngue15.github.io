@@ -248,9 +248,11 @@ function prevSlide(id) {
   container.insertBefore(container.lastElementChild, container.firstElementChild); // déplace la dernière image au début
 }
 
-// Optionnel : défilement automatique toutes les 3s
+//Défilement automatique toutes les 3s
 setInterval(() => nextSlide('blog-carousel'), 3000);
 setInterval(() => nextSlide('ecole-carousel'), 4000);
+setInterval(() => nextSlide('batipro-carousel'), 3000);
+setInterval(() => nextSlide('performance-carousel'), 3000);
 </script>
 
 
