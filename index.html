@@ -1,261 +1,352 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>HOUNGUE Pascal — Dev & Testeur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>HOUNGUE Pascal</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="mailto:pascalhoungue48@gmail.com">Email</a></li>
-            </ul>
-        </nav>
-        <p classe="description">Développeur, freelancer QA et annotateur de données.</p>
-        <p classe="specialisation">Développeur maîtrisant React & Node.js, laravel</p>
-    </header>
 
-    <main>
-        <a href="#projets" class="voir-projets">Voir les projets</a>
+<!-- ─── NAVBAR ─── -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">HP<span class="dot">.</span></div>
+    <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
 
-        <div class="presentation">
-            <img src="image/portfolio.jpg" alt="Votre photo" class="photo">
-            <div class="texte">
-                <h2>HOUNGUE Pascal</h2>
-                <p>Titulaire d’une Licence en informatique appliquée à la gestion des entreprises.</p>
+<!-- ─── HERO ─── -->
+<header class="hero">
+    <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge animate-fade-up" style="--delay:0.1s">Disponible pour freelance</div>
+        <h1 class="hero-title animate-fade-up" style="--delay:0.2s">
+            HOUNGUE<br><span class="accent">Pascal</span>
+        </h1>
+        <p class="hero-sub animate-fade-up" style="--delay:0.35s">
+            Développeur Full-Stack · Testeur · Annotateur de données
+        </p>
+        <p class="hero-stack animate-fade-up" style="--delay:0.5s">React · Node.js · Laravel · TypeScript</p>
+        <div class="hero-actions animate-fade-up" style="--delay:0.65s">
+            <a href="#projets" class="btn btn-primary">Voir les projets</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+    </div>
+    <div class="hero-photo-wrap animate-fade-up" style="--delay:0.3s">
+        <div class="photo-ring"></div>
+        <img src="image/portfolio.png" alt="HOUNGUE Pascal" class="hero-photo">
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroller vers le bas">
+        <div class="scroll-line"></div>
+    </a>
+</header>
+
+<!-- ─── ABOUT ─── -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-label">01 — À propos</div>
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Je suis un <strong>Développeur Full-Stack & Testeur</strong> passionné par la qualité logicielle et la création des sites et applications web fiables. Titulaire d'une Licence en informatique appliquée à la gestion des entreprises.</p>
+                <p>Je maîtrise l'analyse produit : détection de bugs, reproduction, rédaction de rapports clairs et amélioration de l'expérience utilisateur. Grâce à une forte compréhension des outils informatiques, je résous des problèmes techniques complexes.</p>
+                <p>Je possède également une solide base en <strong>cybersécurité</strong>, ce qui m'apporte une approche plus rigoureuse dans mes projets et mes tests.</p>
+            </div>
+            <div class="about-cards">
+                <div class="stat-card">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Projets livrés</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">1+</span>
+                    <span class="stat-label">Années d'expérience</span>
+                </div>
+                <div class="stat-card accent-card">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Passion pour le code</span>
+                </div>
             </div>
         </div>
-        <section id="about">
-            <h2>A propos de moi</h2>
-            <p>Je suis un jeune QA Engineer et Développeur avec un niveau intermédiaire, 
-                passionné par la qualité logicielle, les tests et la création d’applications fiables. 
-                Je maîtrise le développement et je sais également analyser un produit: 
-                détection de bugs, reproduction,
-                rédaction de rapports clairs et amélioration de l’expérience utilisateur.</p>
-            <p>Grâce à une forte compréhension des outils informatiques,
-                je suis capable de résoudre des problèmes techniques complexes (dépannage logiciel,
-                erreurs système, configurations, compatibilités…).</p>
-            <p>Je possède aussi une bonne base en cybersécurité, ce qui me permet d’avoir
-                une approche plus rigoureuse et sécurisée dans mes projets et mes tests.</p>
-        </section>
+    </div>
+</section>
 
-        <section id="skills">
-            <h2>Mes compétences</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="image/git.png" alt="Git">
-                    <span>Git</span>
-                </div>
-                <div class="skill">
-                    <img src="image/laravel.png" alt="Laravel">
-                    <span>Laravel</span>
-                </div>
-                <div class="skill">
-                    <img src="image/htmlcss.png" alt="HTML/CSS">
-                    <span>HTML/CSS</span>
-                </div>
-                <div class="skill">
-                    <img src="image/js.png" alt="JavaScript">
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill">
-                    <img src="image/typescript.png" alt="TypeScript">
-                    <span> TypeScript </span>
-                </div>
+<!-- ─── SKILLS ─── -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <div class="section-label">02 — Compétences</div>
+        <h2 class="section-title">Ma boîte à outils</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><img src="image/htmlcss.png" alt="HTML/CSS"><span>HTML / CSS</span></div>
+            <div class="skill-item"><img src="image/js.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-item"><img src="image/typescript.png" alt="TypeScript"><span>TypeScript</span></div>
+            <div class="skill-item"><img src="image/react.png" alt="React"><span>React</span></div>
+            <div class="skill-item"><img src="image/node.png" alt="Node.js"><span>Node.js</span></div>
+            <div class="skill-item"><img src="image/php.png" alt="PHP"><span>PHP</span></div>
+            <div class="skill-item"><img src="image/laravel.png" alt="Laravel"><span>Laravel</span></div>
+            <div class="skill-item"><img src="image/mysql.png" alt="MySQL"><span>MySQL</span></div>
+            <div class="skill-item"><img src="image/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="skill-item"><img src="image/git.png" alt="Git"><span>Git</span></div>
+            <div class="skill-item"><img src="image/wordpress.png" alt="WordPress"><span>WordPress</span></div>
+            <div class="skill-item"><img src="image/cyber.png" alt="Cybersécurité"><span>Cybersécurité</span></div>
+            <div class="skill-item"><img src="image/gestionbd.png" alt="BDD"><span>Gestion BDD</span></div>
+            <div class="skill-item"><img src="image/office.png" alt="Office"><span>Microsoft Office</span></div>
+            <div class="skill-item"><img src="image/article.png" alt="Rédaction"><span>Rédaction</span></div>
+        </div>
+    </div>
+</section>
 
-                <div class=" skill">
-                    <img src="image/react.png" alt="React">
-                    <span>React</span>
+<!-- ─── PROJETS ─── -->
+<section id="projets" class="section">
+    <div class="container">
+        <div class="section-label">03 — Projets</div>
+        <h2 class="section-title">Réalisations</h2>
+
+        <!-- Projets fixes -->
+        <div class="projets-grid">
+            <div class="projet-card" onclick="openModal('image/vortex.png', 'Vortex', 'Agence de développement web')">
+                <div class="projet-img-wrap">
+                    <img src="image/vortex.png" alt="Vortex">
+                    <div class="projet-overlay"><span>Voir</span></div>
                 </div>
-                <div class="skill">
-                    <img src="image/node.png" alt="Node">
-                    <span>Node.js</span>
-                </div>
-                <div class="skill">
-                    <img src="image/mongodb.png" alt="MongoDB">
-                    <span>MongoDB</span>
-                </div>
-                <div class="skill">
-                    <img src="image/mysql.png" alt="MySQL">
-                    <span>MySQL</span>
-                </div>
-                <div class="skill">
-                    <img src="image/cyber.png" alt="cyber">
-                    <span>cybersécurité</span>
-                </div>
-                <div class="skill">
-                    <img src="image/php.png" alt="PHP">
-                    <span>PHP</span>
-                </div>
-                <div class="skill">
-                    <img src="image/article.png" alt="article">
-                    <span>Rédaction d'article</span>
-                </div>
-                <div class="skill">
-                    <img src="image/wordpress.png" alt="WordPress">
-                    <span>WordPress</span>
-                </div>
-                <div class="skill">
-                    <img src="image/gestionbd.png" alt="gestionbd">
-                    <span>Gestion base de donnée</span>
-                </div>
-                <div class="skill">
-                    <img src="image/office.png" alt="Office">
-                    <span>Microsoft Office</span>
+                <div class="projet-info">
+                    <h3>Vortex</h3>
+                    <p>Agence de développement web</p>
                 </div>
             </div>
-            </div>
-        </section>
-        <section id="projets">
-            <h2>Projets</h2>
-            <div class="projets-container">
-                <div class="projet">
-                    <img src="image/vortex.png" alt="Projet 1">
-                    <h3>Vortex </h3>
-                    <p> Agence de developpement</p>
+            <div class="projet-card" onclick="openModal('image/cyberconsult.png', 'CyberConsult', 'Audit et conseil en cybersécurité')">
+                <div class="projet-img-wrap">
+                    <img src="image/cyberconsult.png" alt="CyberConsult">
+                    <div class="projet-overlay"><span>Voir</span></div>
                 </div>
-                <div class="projet">
-                    <img src="image/cyberconsult.png" alt="Projet 2">
+                <div class="projet-info">
                     <h3>CyberConsult</h3>
-                    <p> Service spécialisé dans l'audit et conseil en cybersécurité</p>
+                    <p>Audit et conseil en cybersécurité</p>
                 </div>
-                <div class="projet">
-                    <img src="image/explore.png" alt="Projet 3">
+            </div>
+            <div class="projet-card" onclick="openModal('image/explore.png', 'GlobExplore', 'Agence de voyage')">
+                <div class="projet-img-wrap">
+                    <img src="image/explore.png" alt="GlobExplore">
+                    <div class="projet-overlay"><span>Voir</span></div>
+                </div>
+                <div class="projet-info">
                     <h3>GlobExplore</h3>
                     <p>Agence de voyage</p>
-                </div>  
-  <!-- Carrousel Blog -->
-  <div class="carousel">
-    <h3>Blog élégant</h3>
-    <div class="carousel-container" id="blog-carousel">
-      <img src="image/blog1.png" alt="Blog 1">
-      <img src="image/blog2.png" alt="Blog 2">
-      <img src="image/blog3.png" alt="Blog 3">
-    </div>
-    <button class="prev" onclick="prevSlide('blog-carousel')">&#10094;</button>
-    <button class="next" onclick="nextSlide('blog-carousel')">&#10095;</button>
-  </div>
-
-  <!-- Carrousel EcoleManager -->
-  <div class="carousel">
-    <h3>EcoleManager</h3>
-    <div class="carousel-container" id="ecole-carousel">
-      <img src="image/ecolemanager1.png" alt="EcoleManager 1">
-      <img src="image/ecolemanager2.png" alt="EcoleManager 2">
-      <img src="image/ecolemanager3.png" alt="EcoleManager 3">
-    </div>
-    <button class="prev" onclick="prevSlide('ecole-carousel')">&#10094;</button>
-    <button class="next" onclick="nextSlide('ecole-carousel')">&#10095;</button>
-  </div>
-
-  <!-- Carrousel Batipro -->
-  <div class="carousel">
-    <h3>Batipro Construction</h3>
-    <div class="carousel-container" id="batipro-carousel">
-      <img src="image/batipro1.png" alt="batipro 1">
-      <img src="image/batipro2.png" alt="batipro 2">
-      <img src="image/batipro3.png" alt="batipro 3">
-    <img src="image/batipro4.png" alt="batipro 4">
-        <img src="image/batipro5.png" alt="batipro 5">
-    </div>
-    <button class="prev" onclick="prevSlide('batipro-carousel')">&#10094;</button>
-    <button class="next" onclick="nextSlide('batipro-carousel')">&#10095;</button>
-  </div>
-                
-                
-      <!-- Carrousel Performance-->
-  <div class="carousel">
-    <h3>Performance QA</h3>
-    <div class="carousel-container" id="performance-carousel">
-      <img src="image/Performance_tester.jpg" alt="Performance_tester">
-        <img src="image/performanceRate.jpg" alt="performanceRate">
-    </div>
-    <button class="prev" onclick="prevSlide('performance-carousel')">&#10094;</button>
-    <button class="next" onclick="nextSlide('performance-carousel')">&#10095;</button>
-  </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <div class="contact-container">
-                <form action="mailto:pascalhoungue48@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Nom">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
-                <div class="remplissage"></div>
+        <!-- Carrousels -->
+        <div class="carousels-section">
+
+            <div class="carousel-block">
+                <h3 class="carousel-title">Blog Élégant</h3>
+                <div class="carousel" data-id="blog">
+                    <div class="carousel-track">
+                        <img src="image/blog1.png" alt="Blog 1">
+                        <img src="image/blog2.png" alt="Blog 2">
+                        <img src="image/blog3.png" alt="Blog 3">
+                    </div>
+                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
+                    <button class="c-next" aria-label="Suivant">&#8594;</button>
+                    <div class="c-dots"></div>
+                </div>
             </div>
-        </section>
 
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>Informations de contact</h3>
-                <p>Adresse email : <a href="mailto:pascalhoungue48@gmail.com">pascalhoungue48@gmail.com</a></p>
+            <div class="carousel-block">
+                <h3 class="carousel-title">EcoleManager</h3>
+                <div class="carousel" data-id="ecole">
+                    <div class="carousel-track">
+                        <img src="image/ecolemanager1.png" alt="EcoleManager 1">
+                        <img src="image/ecolemanager2.png" alt="EcoleManager 2">
+                        <img src="image/ecolemanager3.png" alt="EcoleManager 3">
+                    </div>
+                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
+                    <button class="c-next" aria-label="Suivant">&#8594;</button>
+                    <div class="c-dots"></div>
+                </div>
+            </div>
+
+            <div class="carousel-block">
+                <h3 class="carousel-title">Batipro Construction</h3>
+                <div class="carousel" data-id="batipro">
+                    <div class="carousel-track">
+                        <img src="image/batipro1.png" alt="Batipro 1">
+                        <img src="image/batipro2.png" alt="Batipro 2">
+                        <img src="image/batipro3.png" alt="Batipro 3">
+                        <img src="image/batipro4.png" alt="Batipro 4">
+                        <img src="image/batipro5.png" alt="Batipro 5">
+                    </div>
+                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
+                    <button class="c-next" aria-label="Suivant">&#8594;</button>
+                    <div class="c-dots"></div>
+                </div>
+            </div>
+
+            <div class="carousel-block">
+                <h3 class="carousel-title">Performance QA</h3>
+                <div class="carousel" data-id="performance">
+                    <div class="carousel-track">
+                        <img src="image/Performance_tester.jpg" alt="Performance Tester">
+                        <img src="image/performanceRate.jpg" alt="Performance Rate">
+                    </div>
+                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
+                    <button class="c-next" aria-label="Suivant">&#8594;</button>
+                    <div class="c-dots"></div>
+                </div>
             </div>
 
         </div>
-    </footer>
-    
-    <script>
-        document.querySelectorAll('.projet img').forEach(img => {
-            img.addEventListener('click', () => {
-                const overlay = document.createElement('div');
-                overlay.style.position = 'fixed';
-                overlay.style.top = 0;
-                overlay.style.left = 0;
-                overlay.style.width = '100%';
-                overlay.style.height = '100%';
-                overlay.style.background = 'rgba(0,0,0,0.8)';
-                overlay.style.display = 'flex';
-                overlay.style.alignItems = 'center';
-                overlay.style.justifyContent = 'center';
-                overlay.style.zIndex = 1000;
+    </div>
+</section>
 
-                const bigImg = document.createElement('img');
-                bigImg.src = img.src;
-                bigImg.style.maxWidth = '90%';
-                bigImg.style.maxHeight = '90%';
-                bigImg.style.borderRadius = '10px';
-                bigImg.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+<!-- ─── CONTACT ─── -->
+<section id="contact" class="section section-alt">
+    <div class="container">
+        <div class="section-label">04 — Contact</div>
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <p>Vous avez un projet ? Une mission freelance ? N'hésitez pas à me contacter, je réponds rapidement.</p>
+                <a href="mailto:pascalhoungue48@gmail.com" class="contact-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                    pascalhoungue48@gmail.com
+                </a>
+            </div>
+            <form class="contact-form" action="mailto:pascalhoungue48@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder=" " required>
+                    <label for="name">Votre nom</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">Votre email</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Votre message</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-                overlay.appendChild(bigImg);
-                document.body.appendChild(overlay);
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <span class="footer-logo">HP<span class="dot">.</span></span>
+        <p>© 2025 HOUNGUE Pascal — Tous droits réservés</p>
+        <a href="mailto:pascalhoungue48@gmail.com" class="footer-mail">pascalhoungue48@gmail.com</a>
+    </div>
+</footer>
 
-                overlay.addEventListener('click', () => overlay.remove());
-            });
-        });
-    </script>
-    <script>
-function nextSlide(id) {
-  const container = document.getElementById(id);
-  container.appendChild(container.firstElementChild); // déplace la première image à la fin
+<!-- ─── MODAL ─── -->
+<div class="modal-overlay" id="modal" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <img id="modal-img" src="" alt="">
+        <div class="modal-caption">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+/* ─── NAVBAR scroll ─── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ─── Burger menu ─── */
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    burger.classList.toggle('active');
+});
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.classList.remove('active');
+}));
+
+/* ─── Scroll reveal ─── */
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.section, .skill-item, .projet-card, .stat-card, .carousel-block').forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+});
+
+/* ─── Modal ─── */
+function openModal(src, title, desc) {
+    document.getElementById('modal-img').src = src;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-desc').textContent = desc;
+    document.getElementById('modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
-
-function prevSlide(id) {
-  const container = document.getElementById(id);
-  container.insertBefore(container.lastElementChild, container.firstElementChild); // déplace la dernière image au début
+function closeModal() {
+    document.getElementById('modal').classList.remove('active');
+    document.body.style.overflow = '';
 }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-//Défilement automatique toutes les 3s
-setInterval(() => nextSlide('blog-carousel'), 3000);
-setInterval(() => nextSlide('ecole-carousel'), 4000);
-setInterval(() => nextSlide('batipro-carousel'), 3000);
-setInterval(() => nextSlide('performance-carousel'), 3000);
+/* ─── Carousels ─── */
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const imgs = track.querySelectorAll('img');
+    const dotsContainer = carousel.querySelector('.c-dots');
+    let current = 0;
+    const total = imgs.length;
+
+    // Build dots
+    imgs.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'c-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', `Slide ${i+1}`);
+        d.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(d);
+    });
+
+    function goTo(n) {
+        current = (n + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dotsContainer.querySelectorAll('.c-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    carousel.querySelector('.c-prev').addEventListener('click', () => goTo(current - 1));
+    carousel.querySelector('.c-next').addEventListener('click', () => goTo(current + 1));
+
+    // Auto-play
+    let timer = setInterval(() => goTo(current + 1), 3500);
+    carousel.addEventListener('mouseenter', () => clearInterval(timer));
+    carousel.addEventListener('mouseleave', () => { timer = setInterval(() => goTo(current + 1), 3500); });
+
+    // Swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
+    track.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    });
+});
 </script>
-
-
 </body>
-
 </html>
