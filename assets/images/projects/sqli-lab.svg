@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Laboratoire SQLi</title>
+  <desc id="desc">Terminal stylisé automatisant un laboratoire d'injection SQL</desc>
+  <rect width="800" height="500" fill="#07110f"/>
+  <rect x="60" y="45" width="680" height="410" rx="18" fill="#040a09" stroke="#203832"/>
+  <path d="M60 100h680" stroke="#203832"/>
+  <circle cx="92" cy="73" r="7" fill="#ff6b6b"/><circle cx="117" cy="73" r="7" fill="#f5c451"/><circle cx="142" cy="73" r="7" fill="#32e6a1"/>
+  <text x="175" y="80" fill="#9ab0a8" font-family="monospace" font-size="15">blind_sqli.py</text>
+  <g font-family="monospace" font-size="15">
+    <text x="90" y="145" fill="#32e6a1">$ python blind_sqli.py --target lab</text>
+    <text x="90" y="185" fill="#9ab0a8">[+] Testing conditional responses...</text>
+    <text x="90" y="225" fill="#38bdf8">[+] Injection point confirmed</text>
+    <text x="90" y="265" fill="#9ab0a8">[~] Extracting administrator password</text>
+    <text x="90" y="305" fill="#e6f1ed">    position 01: s</text>
+    <text x="90" y="335" fill="#e6f1ed">    position 02: 3</text>
+    <text x="90" y="365" fill="#e6f1ed">    position 03: c</text>
+    <text x="90" y="415" fill="#32e6a1">[✓] Lab solved in 42 requests_</text>
+  </g>
+  <rect x="585" y="130" width="110" height="38" rx="19" fill="#32e6a1" opacity=".12"/>
+  <text x="610" y="155" fill="#32e6a1" font-family="monospace" font-size="14">SOLVED</text>
+</svg>

@@ -1,349 +1,737 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOUNGUE Pascal — Dev & Testeur</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portfolio de Pascal HOUNGUE, développeur web & analyste cybersécurité Blue Team et SOC."
+    >
+    <meta name="theme-color" content="#07110f">
+    <meta property="og:title" content="Développeur web — Cybersécurité, Blue Team & SOC">
+    <meta
+      property="og:description"
+      content="Projets, compétences et parcours de Pascal en cybersécurité défensive."
+    >
+    <meta property="og:type" content="website">
+    <title>Pascal HOUNGUE Développeur web | Cybersécurité, Blue Team & SOC</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<!-- ─── NAVBAR ─── -->
-<nav class="navbar" id="navbar">
-    <div class="nav-logo">HP<span class="dot">.</span></div>
-    <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-    </ul>
-    <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-    </button>
-</nav>
+    <header class="site-header" id="accueil">
+      <nav class="container navbar" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Pascal HOUNGUE, retour à l’accueil">
+          <span aria-hidden="true">&gt;_</span> Pascal HOUNGUE
+        </a>
 
-<!-- ─── HERO ─── -->
-<header class="hero">
-    <div class="hero-bg">
-        <div class="grid-overlay"></div>
-        <div class="glow glow-1"></div>
-        <div class="glow glow-2"></div>
-    </div>
-    <div class="hero-content">
-        <div class="hero-badge animate-fade-up" style="--delay:0.1s">Disponible pour freelance</div>
-        <h1 class="hero-title animate-fade-up" style="--delay:0.2s">
-            HOUNGUE<br><span class="accent">Pascal</span>
-        </h1>
-        <p class="hero-sub animate-fade-up" style="--delay:0.35s">
-            Développeur Full-Stack · Testeur · Annotateur de données
-        </p>
-        <p class="hero-stack animate-fade-up" style="--delay:0.5s">Vibe Coding · Laravel</p>
-        <div class="hero-actions animate-fade-up" style="--delay:0.65s">
-            <a href="#projets" class="btn btn-primary">Voir les projets</a>
-            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#a-propos">À propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#projets">Projets</a>
+          <a href="#parcours">Parcours</a>
+          <a class="nav-cta" href="#contact">Contact</a>
         </div>
-    </div>
-    <div class="hero-photo-wrap animate-fade-up" style="--delay:0.3s">
-        <div class="photo-ring"></div>
-        <img src="image/portfolio.png" alt="HOUNGUE Pascal" class="hero-photo">
-    </div>
-    <a href="#about" class="scroll-hint" aria-label="Scroller vers le bas">
-        <div class="scroll-line"></div>
-    </a>
-</header>
+      </nav>
+    </header>
 
-<!-- ─── ABOUT ─── -->
-<section id="about" class="section">
-    <div class="container">
-        <div class="section-label">01 — À propos</div>
-        <h2 class="section-title">Qui suis-je ?</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Je suis un <strong>Développeur web & Testeur</strong> passionné par la qualité logicielle et la création des sites et applications web fiables. Titulaire d'une Licence en informatique appliquée à la gestion des entreprises.</p>
-                <p>Je maîtrise l'analyse produit : détection de bugs, reproduction, rédaction de rapports clairs et amélioration de l'expérience utilisateur. Grâce à une forte compréhension des outils informatiques, je résous des problèmes techniques complexes.</p>
-                <p>Je possède également une solide base en <strong>cybersécurité</strong>, ce qui m'apporte une approche plus rigoureuse dans mes projets et mes tests.</p>
+    <main id="contenu">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> Basé à Cotonou, Bénin</p>
+            <h1 id="hero-title">
+              Bonjour, je suis <span>Pascal HOUNGUE</span>.
+              <small
+                class="typing-line"
+                data-text="Développeur web & Analyste de sécurité | Blue Team & SOC Analyst en formation"
+              >
+                Développeur web & Analyste de sécurité | Blue Team & SOC Analyst
+              </small>
+            </h1>
+            <p class="hero-lead">
+              Passionné par la défense des systèmes, l’analyse d’incidents,
+              je transforme les signaux techniques en décisions concrètes pour mieux
+              comprendre, détecter et contrer les menaces.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projets">Voir mes projets</a>
+              <a class="button button-secondary" href="#contact">Me contacter</a>
+              <a
+                class="button button-text"
+                href="assets/cv/pascal-cv.pdf"
+                download
+                aria-label="Télécharger le CV de Pascal au format PDF"
+              >
+                Télécharger mon CV <span aria-hidden="true">↓</span>
+              </a>
             </div>
-            <div class="about-cards">
-                <div class="stat-card">
-                    <span class="stat-num">5+</span>
-                    <span class="stat-label">Projets livrés</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-num">2+</span>
-                    <span class="stat-label">Années d'expérience</span>
-                </div>
-                <div class="stat-card accent-card">
-                    <span class="stat-num">∞</span>
-                    <span class="stat-label">Passion pour la sécurité des données</span>
-                </div>
+
+            <div class="social-links" aria-label="Réseaux et contact">
+              <a
+                href="https://github.com/votre-profil"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil GitHub de Pascal HOUNGUE"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/votre-profil/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil LinkedIn de Pascal HOUNGUE"
+              >
+                LinkedIn
+              </a>
+              <a href="mailto:pascalhoungue48@gmail.com">pascalhoungue48@gmail.com</a>
             </div>
+          </div>
+
+          <aside class="terminal-card reveal" aria-label="Résumé du profil">
+            <div class="terminal-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <p>pascal.houngue@blue-team:~</p>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="terminal-output">Pascal HOUNGUE — Web developer & Cybersecurity learner</p>
+              <p><span class="prompt">$</span> cat focus.txt</p>
+              <ul class="terminal-output">
+                <li>Blue Team / SOC</li>
+                <li>Incident Response</li>
+                <li>Threat Intelligence</li>
+                <li>Digital Forensics</li>
+                <li>Web Development</li>
+              </ul>
+              <p><span class="prompt">$</span> current_mission</p>
+              <p class="terminal-output accent">Développement d'un site web pour un client_</p>
+            </div>
+          </aside>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- ─── SKILLS ─── -->
-<section id="skills" class="section section-alt">
-    <div class="container">
-        <div class="section-label">02 — Compétences</div>
-        <h2 class="section-title">Ma boîte à outils</h2>
-        <div class="skills-grid">
-            <div class="skill-item"><img src="image/htmlcss.png" alt="HTML/CSS"><span>HTML / CSS</span></div>
-            <div class="skill-item"><img src="image/js.png" alt="JavaScript"><span>JavaScript</span></div>
-            <div class="skill-item"><img src="image/typescript.png" alt="TypeScript"><span>TypeScript</span></div>
-            <div class="skill-item"><img src="image/php.png" alt="PHP"><span>PHP</span></div>
-            <div class="skill-item"><img src="image/laravel.png" alt="Laravel"><span>Laravel</span></div>
-            <div class="skill-item"><img src="image/mysql.png" alt="MySQL"><span>MySQL</span></div>
-            <div class="skill-item"><img src="image/git.png" alt="Git"><span>Git</span></div>
-            <div class="skill-item"><img src="image/cyber.png" alt="Cybersécurité"><span>Cybersécurité</span></div>
-            <div class="skill-item"><img src="image/gestionbd.png" alt="BDD"><span>Gestion BDD</span></div>
-            <div class="skill-item"><img src="image/office.png" alt="Office"><span>Microsoft Office</span></div>
-            <div class="skill-item"><img src="image/article.png" alt="Rédaction"><span>Rédaction</span></div>
-            <div class="skill-item"><img src="image/linux.png" alt="Linux"><span>Linux</span></div>
+      <section class="section section-muted" id="a-propos" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 / À propos</p>
+            <h2 id="about-title">Comprendre l’attaque pour mieux défendre.</h2>
+          </div>
+
+          <div class="about-content reveal">
+            <p class="lead">
+              Titulaire d’une licence en informatique, je me spécialise en cybersécurité
+              défensive avec l’objectif d’évoluer au sein d’un SOC.
+            </p>
+            <p>
+              De mai à août 2026, j’ai effectué un stage de trois mois à la DSI/SSI du
+              Port Autonome de Cotonou, encadré par un analyste cybersécurité. Cette
+              immersion m’a permis de contribuer à l’analyse d’incidents réels et de
+              courriels suspects, notamment avec VirusTotal et DidierStevensSuite.
+            </p>
+            <p>
+              En parallèle, je développe des sites web freelance avec Next.js et
+              WordPress headless. Cette double compétence sécurité-développement nourrit
+              mon intérêt pour l’entrepreneuriat et les marchés technologiques africains.
+            </p>
+
+            <dl class="profile-facts">
+              <div>
+                <dt>Formation</dt>
+                <dd>Licence en informatique</dd>
+              </div>
+              <div>
+                <dt>Spécialisation</dt>
+                <dd>Blue Team / SOC / Défense</dd>
+              </div>
+              <div>
+                <dt>Objectif actuel</dt>
+                <dd>Intégrer un SOC en tant que Blue Teamer</dd>
+              </div>
+            </dl>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- ─── PROJETS ─── -->
-<section id="projets" class="section">
-    <div class="container">
-        <div class="section-label">03 — Projets</div>
-        <h2 class="section-title">Réalisations</h2>
+      <section class="section" id="competences" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">02 / Compétences</p>
+            <h2 id="skills-title">Une boîte à outils orientée détection et investigation.</h2>
+            <p>
+              Des fondamentaux réseau à l’analyse forensique, avec une pratique régulière
+              sur des laboratoires dédiés.
+            </p>
+          </div>
 
-        <!-- Projets fixes -->
-        <div class="projets-grid">
-            <div class="projet-card" onclick="openModal('image/vortex.png', 'Vortex', 'Agence de développement web')">
-                <div class="projet-img-wrap">
-                    <img src="image/vortex.png" alt="Vortex">
-                    <div class="projet-overlay"><span>Voir</span></div>
-                </div>
-                <div class="projet-info">
-                    <h3>Vortex</h3>
-                    <p>Agence de développement web</p>
-                </div>
-            </div>
-            <div class="projet-card" onclick="openModal('image/cyberconsult.png', 'CyberConsult', 'Audit et conseil en cybersécurité')">
-                <div class="projet-img-wrap">
-                    <img src="image/cyberconsult.png" alt="CyberConsult">
-                    <div class="projet-overlay"><span>Voir</span></div>
-                </div>
-                <div class="projet-info">
-                    <h3>CyberConsult</h3>
-                    <p>Audit et conseil en cybersécurité</p>
-                </div>
-            </div>
-            <div class="projet-card" onclick="openModal('image/explore.png', 'GlobExplore', 'Agence de voyage')">
-                <div class="projet-img-wrap">
-                    <img src="image/explore.png" alt="GlobExplore">
-                    <div class="projet-overlay"><span>Voir</span></div>
-                </div>
-                <div class="projet-info">
-                    <h3>GlobExplore</h3>
-                    <p>Agence de voyage</p>
-                </div>
-            </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <span class="card-index">01</span>
+              <h3>Cybersécurité / SOC</h3>
+              <div class="tag-list">
+                <span>Analyse d’incidents</span>
+                <span>Windows Forensics</span>
+                <span>Sysmon</span>
+                <span>EVTX</span>
+                <span>Malware Analysis</span>
+                <span>oletools</span>
+                <span>Macros VBA</span>
+                <span>OSINT</span>
+                <span>Threat Intelligence</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="card-index">02</span>
+              <h3>Outils</h3>
+              <div class="tag-list">
+                <span>Kali Linux</span>
+                <span>Wireshark</span>
+                <span>Burp Suite</span>
+                <span>Ghidra</span>
+                <span>CyberChef</span>
+                <span>pwntools</span>
+                <span>Chainsaw</span>
+                <span>Hayabusa</span>
+                <span>Wazuh SIEM</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="card-index">03</span>
+              <h3>Threat Intelligence</h3>
+              <div class="tag-list">
+                <span>VirusTotal</span>
+                <span>AbuseIPDB</span>
+                <span>AlienVault OTX</span>
+                <span>IOC Enrichment</span>
+                <span>Réputation IP / Domaine</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="card-index">04</span>
+              <h3>Développement</h3>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Scripting sécurité</span>
+                <span>Automatisation</span>
+                <span>Next.js / React</span>
+                <span>WordPress headless</span>
+                <span>HTML / CSS / JS</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="card-index">05</span>
+              <h3>Concepts</h3>
+              <div class="tag-list">
+                <span>MITRE ATT&amp;CK</span>
+                <span>MITRE D3FEND</span>
+                <span>Kerberoasting</span>
+                <span>Active Directory</span>
+                <span>Réseaux</span>
+                <span>Virtualisation</span>
+                <span>ITIL / SLA</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="card-index">06</span>
+              <h3>Labs &amp; langues</h3>
+              <div class="tag-list">
+                <span>BTLO</span>
+                <span>TryHackMe</span>
+                <span>Hack The Box</span>
+                <span>Root-Me</span>
+                <span>CryptoHack</span>
+                <span>PortSwigger Academy</span>
+                <span>LetsDefend</span>
+                <span>CyberDefenders</span>
+                <span>Français</span>
+                <span>Anglais technique</span>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <!-- Carrousels -->
-        <div class="carousels-section">
+      <section
+        class="section section-muted"
+        id="certifications"
+        aria-labelledby="certifications-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">03 / Certifications</p>
+            <h2 id="certifications-title">Apprentissage continu, acquis vérifiables.</h2>
+          </div>
 
-            <div class="carousel-block">
-                <h3 class="carousel-title">Blog Élégant</h3>
-                <div class="carousel" data-id="blog">
-                    <div class="carousel-track">
-                        <img src="image/blog1.png" alt="Blog 1">
-                        <img src="image/blog2.png" alt="Blog 2">
-                        <img src="image/blog3.png" alt="Blog 3">
-                    </div>
-                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
-                    <button class="c-next" aria-label="Suivant">&#8594;</button>
-                    <div class="c-dots"></div>
-                </div>
-            </div>
+          <div class="certification-list">
+            <article class="certification-card reveal">
+              <div class="certification-icon" aria-hidden="true">IBM</div>
+              <div>
+                <p class="certification-provider">IBM</p>
+                <h3>Operating Systems: Overview, Admin &amp; Security</h3>
+                <p>Credential ID : 5BTKKS0YOJC7</p>
+              </div>
+              <a
+                href="https://coursera.org/verify/5BTKKS0YOJC7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le credential <span aria-hidden="true">↗</span>
+              </a>
+            </article>
 
-            <div class="carousel-block">
-                <h3 class="carousel-title">EcoleManager</h3>
-                <div class="carousel" data-id="ecole">
-                    <div class="carousel-track">
-                        <img src="image/ecolemanager1.png" alt="EcoleManager 1">
-                        <img src="image/ecolemanager2.png" alt="EcoleManager 2">
-                        <img src="image/ecolemanager3.png" alt="EcoleManager 3">
-                    </div>
-                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
-                    <button class="c-next" aria-label="Suivant">&#8594;</button>
-                    <div class="c-dots"></div>
-                </div>
-            </div>
+            <article class="certification-card reveal">
+              <div class="certification-icon" aria-hidden="true">IBM</div>
+              <div>
+                <p class="certification-provider">IBM</p>
+                <h3>Cybersecurity Tools &amp; Cyberattacks</h3>
+                <p>Credential ID : LRHPMJ7206H4</p>
+              </div>
+              <a
+                href="https://coursera.org/verify/LRHPMJ7206H4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le credential <span aria-hidden="true">↗</span>
+              </a>
+            </article>
 
-            <div class="carousel-block">
-                <h3 class="carousel-title">Batipro Construction</h3>
-                <div class="carousel" data-id="batipro">
-                    <div class="carousel-track">
-                        <img src="image/batipro1.png" alt="Batipro 1">
-                        <img src="image/batipro2.png" alt="Batipro 2">
-                        <img src="image/batipro3.png" alt="Batipro 3">
-                        <img src="image/batipro4.png" alt="Batipro 4">
-                        <img src="image/batipro5.png" alt="Batipro 5">
-                    </div>
-                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
-                    <button class="c-next" aria-label="Suivant">&#8594;</button>
-                    <div class="c-dots"></div>
-                </div>
-            </div>
+            <article class="certification-card reveal">
+              <div class="certification-icon" aria-hidden="true">IBM</div>
+              <div>
+                <p class="certification-provider">IBM</p>
+                <h3>Introduction to Cybersecurity Careers</h3>
+                <p>Credential ID : NDYUBCPOAEE7</p>
+              </div>
+              <a
+                href="https://coursera.org/verify/NDYUBCPOAEE7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le credential <span aria-hidden="true">↗</span>
+              </a>
+            </article>
 
-            <div class="carousel-block">
-                <h3 class="carousel-title">Performance QA</h3>
-                <div class="carousel" data-id="performance">
-                    <div class="carousel-track">
-                        <img src="image/Performance_tester.jpg" alt="Performance Tester">
-                        <img src="image/performanceRate.jpg" alt="Performance Rate">
-                    </div>
-                    <button class="c-prev" aria-label="Précédent">&#8592;</button>
-                    <button class="c-next" aria-label="Suivant">&#8594;</button>
-                    <div class="c-dots"></div>
-                </div>
-            </div>
-
+            <article class="certification-card reveal">
+              <div class="certification-icon university-icon" aria-hidden="true">YU</div>
+              <div>
+                <p class="certification-provider">Yonsei University</p>
+                <h3>IoT Wireless &amp; Cloud Computing</h3>
+                <p>Credential ID : NIH19B8EZHF8</p>
+              </div>
+              <a
+                href="https://coursera.org/verify/NIH19B8EZHF8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le credential <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- ─── CONTACT ─── -->
-<section id="contact" class="section section-alt">
-    <div class="container">
-        <div class="section-label">04 — Contact</div>
-        <h2 class="section-title">Travaillons ensemble</h2>
-        <div class="contact-wrap">
-            <div class="contact-info">
-                <p>Vous avez un projet ? Une mission freelance ? N'hésitez pas à me contacter, je réponds rapidement.</p>
-                <a href="mailto:pascalhoungue48@gmail.com" class="contact-email">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-                    pascalhoungue48@gmail.com
-                </a>
+      <section class="section" id="projets" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">04 / Projets</p>
+            <h2 id="projects-title">De la théorie à des cas d’usage concrets.</h2>
+            <p>
+              Investigations, automatisations et produits web conçus pour apprendre,
+              documenter et résoudre des problèmes réels.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-featured reveal">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/threat-intel.svg"
+                  alt="Aperçu stylisé d’un tableau de bord de threat intelligence"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-content">
+                <p class="project-type">Threat Intelligence · Python</p>
+                <h3>Analyse de réputation IP et domaine</h3>
+                <p>
+                  Script d’enrichissement d’IOC qui agrège VirusTotal, AbuseIPDB et
+                  AlienVault OTX pour produire une synthèse exploitable.
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>Python</li>
+                  <li>REST API</li>
+                  <li>JSON</li>
+                  <li>OSINT</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/Houngue15/IPscan" target="_blank" rel="noopener noreferrer">
+                    GitHub <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/btlo-analysis.svg"
+                  alt="Aperçu stylisé d’une chaîne d’attaque analysée"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-content">
+                <p class="project-type">Blue Team · Forensics</p>
+                <h3>Reconstitution d’une chaîne d’attaque</h3>
+                <p>
+                  Rapport BTLO retraçant une compromission de HTA à un reverse shell,
+                  puis une escalade JuicyPotato et un bypass UAC.
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>EVTX</li>
+                  <li>PowerShell</li>
+                  <li>MITRE ATT&amp;CK</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#contact">
+                    Disponible sur demande <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/sqli-lab.svg"
+                  alt="Aperçu stylisé d’un terminal exécutant un laboratoire SQL"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </div>
+            </article>
+            
+            <article class="project-card reveal">
+              <a class="project-image" href="#" target="_blank" rel="noopener noreferrer" aria-label="Voir le site GlobExplore">
+                <img src="assets/images/projects/globexplore.png" alt="Aperçu stylisé du site GlobExplore" width="800" height="500"
+                  loading="lazy">
+              </a>
+              <div class="project-content">
+                <p class="project-type">Développement web · Headless</p>
+                <h3>GlobExplore</h3>
+                <p>
+                  Site performant combinant une interface Next.js et un back-office
+                  WordPress headless, déployé sur Vercel.
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>Next.js</li>
+                  <li>WordPress</li>
+                  <li>Vercel</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Visiter le site <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="project-card reveal">
+              <a class="project-image" href="#" target="_blank" rel="noopener noreferrer"
+                aria-label="Voir le site Batipro Construction">
+                <img src="assets/images/projects/batipro.png" alt="Aperçu stylisé du site Batipro Construction" width="800"
+                  height="500" loading="lazy">
+              </a>
+                  <div class="project-content">
+                    <p class="project-type">Développement web</p>
+                    <h3>BatiPro Construction</h3>
+                <p>
+                  Site performant combinant html, css, js et php natif
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>PHP</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Visiter le site <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a
+                class="project-image"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Voir le site Batipro Construction"
+              >
+                <img
+                  src="assets/images/projects/ecolemanager.png"
+                  alt="Aperçu stylisé du site EcoleManager"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </a>
+              <div class="project-content">
+                <p class="project-type">Développement web</p>
+                <h3>EcoleManager</h3>
+                <p>
+                    Site performant à l'aide du next.js et de base de données mysql
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>Next.js</li>
+                  <li>Base de données MySQL</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Visiter le site <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a
+                class="project-image"
+                href="https://psycecat.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Voir le site Psycecat"
+              >
+                <img
+                  src="assets/images/projects/psycecat.png"
+                  alt="Aperçu stylisé du site Psycecat"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </a>
+              <div class="project-content">
+                <p class="project-type">Développement web · SEO</p>
+                <h3>Psycecat</h3>
+                <p>
+                  Site headless avec formulaires personnalisés, optimisation SEO et
+                  génération dynamique du sitemap.
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>Next.js</li>
+                  <li>WordPress</li>
+                  <li>SEO</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://psycecat.com" target="_blank" rel="noopener noreferrer">
+                    Visiter le site <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/wazuh-siem.svg"
+                  alt="Aperçu stylisé d’une plateforme SIEM Wazuh"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-content">
+                <p class="project-type">SOC Lab · SIEM</p>
+                <h3>Plateforme Wazuh virtualisée</h3>
+                <p>
+                  Déploiement d’un environnement SIEM pour centraliser les événements,
+                  expérimenter les règles de détection et suivre les alertes.
+                </p>
+                <ul class="project-stack" aria-label="Technologies utilisées">
+                  <li>Wazuh</li>
+                  <li>Virtualisation</li>
+                  <li>Sysmon</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#contact">
+                    Disponible sur demande <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="parcours" aria-labelledby="journey-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">05 / Parcours</p>
+            <h2 id="journey-title">Une progression guidée par la pratique.</h2>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <p>Fondations</p>
+                <h3>Licence en informatique</h3>
+                <p>
+                  Acquisition des fondamentaux en développement, systèmes, réseaux et
+                  bases de données.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <p>11 mai — 10 août 2026</p>
+                <h3>Stage DSI/SSI · Port Autonome de Cotonou</h3>
+                <p>
+                  Immersion de trois mois en analyse d’incidents et investigation de
+                  courriels suspects, sous l’encadrement d’un analyste cybersécurité.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <p>2026</p>
+                <h3>Certifications IBM &amp; Coursera</h3>
+                <p>
+                  Consolidation des connaissances en systèmes d’exploitation, outils de
+                  cybersécurité, cyberattaques et cloud computing.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item timeline-current reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <p>Objectif · 16–17 novembre 2026</p>
+                <h3>Préparation HackerLab 2026</h3>
+                <p>
+                  Entraînement CTF multidisciplinaire pour la finale organisée par
+                  ASIN-Bénin à Cotonou.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">06 / Contact</p>
+            <h2 id="contact-title">Construisons quelque chose de sécurisé et innovant.</h2>
+            <p>
+              Une opportunité, une collaboration ou simplement envie d’échanger autour
+              de la cybersécurité d'un projet web ? Écrivez-moi.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:pascalhoungue48@gmail.com">pascalhoungue48@gmail.com</a>
+              <a
+                href="https://www.linkedin.com/in/pascal-houngue-ab1554372/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                href="https://github.com/Houngue15"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <form class="contact-form" action="mailto:pascalhoungue48@gmail.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder=" " required>
-                    <label for="name">Votre nom</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder=" " required>
-                    <label for="email">Votre email</label>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
-                    <label for="message">Votre message</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer le message</button>
-            </form>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            id="contact-form"
+            action="https://formspree.io/f/mgaelqrv"
+            method="POST"
+            
+            
+          >
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                placeholder="Votre nom"
+                required
+              >
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="vous@exemple.com"
+                required
+              >
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Parlez-moi de votre projet…"
+                required
+              ></textarea>
+            </div>
+            <button class="button button-primary" type="submit">
+              Envoyer le message <span aria-hidden="true">→</span>
+            </button>
+          </form>
+          <p class="form-note" id="form-note">
+            
+            </p>
         </div>
-    </div>
-</section>
+      </section>
+    </main>
 
-<!-- ─── FOOTER ─── -->
-<footer class="footer">
-    <div class="container footer-inner">
-        <span class="footer-logo">HP<span class="dot">.</span></span>
-        <p>© 2025 HOUNGUE Pascal — Tous droits réservés</p>
-        <a href="mailto:pascalhoungue48@gmail.com" class="footer-mail">pascalhoungue48@gmail.com</a>
-    </div>
-</footer>
-
-<!-- ─── MODAL ─── -->
-<div class="modal-overlay" id="modal" onclick="closeModal()">
-    <div class="modal-box" onclick="event.stopPropagation()">
-        <button class="modal-close" onclick="closeModal()">✕</button>
-        <img id="modal-img" src="" alt="">
-        <div class="modal-caption">
-            <h3 id="modal-title"></h3>
-            <p id="modal-desc"></p>
-        </div>
-    </div>
-</div>
-
-<script>
-/* ─── NAVBAR scroll ─── */
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-/* ─── Burger menu ─── */
-const burger = document.getElementById('burger');
-const navLinks = document.querySelector('.nav-links');
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    burger.classList.toggle('active');
-});
-document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    burger.classList.remove('active');
-}));
-
-/* ─── Scroll reveal ─── */
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.section, .skill-item, .projet-card, .stat-card, .carousel-block').forEach(el => {
-    el.classList.add('reveal');
-    observer.observe(el);
-});
-
-/* ─── Modal ─── */
-function openModal(src, title, desc) {
-    document.getElementById('modal-img').src = src;
-    document.getElementById('modal-title').textContent = title;
-    document.getElementById('modal-desc').textContent = desc;
-    document.getElementById('modal').classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-function closeModal() {
-    document.getElementById('modal').classList.remove('active');
-    document.body.style.overflow = '';
-}
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-/* ─── Carousels ─── */
-document.querySelectorAll('.carousel').forEach(carousel => {
-    const track = carousel.querySelector('.carousel-track');
-    const imgs = track.querySelectorAll('img');
-    const dotsContainer = carousel.querySelector('.c-dots');
-    let current = 0;
-    const total = imgs.length;
-
-    // Build dots
-    imgs.forEach((_, i) => {
-        const d = document.createElement('button');
-        d.className = 'c-dot' + (i === 0 ? ' active' : '');
-        d.setAttribute('aria-label', `Slide ${i+1}`);
-        d.addEventListener('click', () => goTo(i));
-        dotsContainer.appendChild(d);
-    });
-
-    function goTo(n) {
-        current = (n + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dotsContainer.querySelectorAll('.c-dot').forEach((d, i) => d.classList.toggle('active', i === current));
-    }
-
-    carousel.querySelector('.c-prev').addEventListener('click', () => goTo(current - 1));
-    carousel.querySelector('.c-next').addEventListener('click', () => goTo(current + 1));
-
-    // Auto-play
-    let timer = setInterval(() => goTo(current + 1), 3500);
-    carousel.addEventListener('mouseenter', () => clearInterval(timer));
-    carousel.addEventListener('mouseleave', () => { timer = setInterval(() => goTo(current + 1), 3500); });
-
-    // Swipe support
-    let startX = 0;
-    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
-    track.addEventListener('touchend', e => {
-        const diff = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
-    });
-});
-</script>
-</body>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#accueil"><span aria-hidden="true">&gt;_</span> Pascal HOUNGUE</a>
+        <p>Pascal HOUNGUE — <span id="current-year">2026</span>.</p>
+        <a href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
 </html>

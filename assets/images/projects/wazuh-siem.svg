@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Plateforme Wazuh SIEM</title>
+  <desc id="desc">Tableau de bord stylisé affichant des alertes de sécurité</desc>
+  <rect width="800" height="500" fill="#07110f"/>
+  <rect x="45" y="40" width="710" height="420" rx="18" fill="#0e1b18" stroke="#203832"/>
+  <rect x="45" y="40" width="145" height="420" rx="18" fill="#0a1513"/>
+  <text x="75" y="85" fill="#32e6a1" font-family="monospace" font-size="21" font-weight="700">WAZUH</text>
+  <g fill="#9ab0a8" font-family="monospace" font-size="12">
+    <text x="75" y="145">OVERVIEW</text><text x="75" y="185">SECURITY</text><text x="75" y="225">THREAT HUNTING</text><text x="75" y="265">AGENTS</text>
+  </g>
+  <text x="225" y="85" fill="#e6f1ed" font-family="monospace" font-size="18">Security events overview</text>
+  <rect x="225" y="115" width="150" height="90" rx="9" fill="#12231f" stroke="#203832"/>
+  <rect x="395" y="115" width="150" height="90" rx="9" fill="#12231f" stroke="#203832"/>
+  <rect x="565" y="115" width="150" height="90" rx="9" fill="#12231f" stroke="#203832"/>
+  <g font-family="monospace">
+    <text x="245" y="145" fill="#9ab0a8" font-size="12">TOTAL EVENTS</text><text x="245" y="182" fill="#e6f1ed" font-size="28">24,831</text>
+    <text x="415" y="145" fill="#9ab0a8" font-size="12">HIGH ALERTS</text><text x="415" y="182" fill="#ff6b6b" font-size="28">42</text>
+    <text x="585" y="145" fill="#9ab0a8" font-size="12">ACTIVE AGENTS</text><text x="585" y="182" fill="#32e6a1" font-size="28">18</text>
+  </g>
+  <rect x="225" y="230" width="490" height="185" rx="9" fill="#12231f" stroke="#203832"/>
+  <path d="M255 370l50-35 45 12 55-70 55 55 45-90 55 66 55-35 50 17" fill="none" stroke="#32e6a1" stroke-width="3"/>
+  <path d="M255 385h430M255 335h430M255 285h430" stroke="#203832"/>
+  <text x="245" y="258" fill="#38bdf8" font-family="monospace" font-size="13">ALERT VOLUME / LAST 24H</text>
+</svg>

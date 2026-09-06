@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Chaîne d'attaque BTLO</title>
+  <desc id="desc">Diagramme stylisé d'une chaîne d'attaque analysée</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L10 3 0 6z" fill="#32e6a1"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#07110f"/>
+  <circle cx="650" cy="80" r="180" fill="#32e6a1" opacity=".04"/>
+  <text x="55" y="65" fill="#32e6a1" font-family="monospace" font-size="17">INCIDENT TIMELINE / BTLO</text>
+  <text x="55" y="95" fill="#9ab0a8" font-family="monospace" font-size="13">Attack chain reconstruction</text>
+  <path d="M95 250H705" stroke="#32e6a1" stroke-width="3" marker-end="url(#arrow)"/>
+  <g font-family="monospace" text-anchor="middle">
+    <g transform="translate(110 250)">
+      <circle r="35" fill="#12231f" stroke="#32e6a1" stroke-width="2"/><text y="6" fill="#e6f1ed" font-size="16">HTA</text>
+      <text y="70" fill="#9ab0a8" font-size="12">INITIAL ACCESS</text>
+    </g>
+    <g transform="translate(255 250)">
+      <circle r="35" fill="#12231f" stroke="#32e6a1" stroke-width="2"/><text y="6" fill="#e6f1ed" font-size="13">PS1</text>
+      <text y="70" fill="#9ab0a8" font-size="12">POWERSHELL</text>
+    </g>
+    <g transform="translate(400 250)">
+      <circle r="35" fill="#12231f" stroke="#32e6a1" stroke-width="2"/><text y="-2" fill="#e6f1ed" font-size="12">FILE</text><text y="14" fill="#e6f1ed" font-size="12">LESS</text>
+      <text y="70" fill="#9ab0a8" font-size="12">SHELLCODE</text>
+    </g>
+    <g transform="translate(545 250)">
+      <circle r="35" fill="#12231f" stroke="#38bdf8" stroke-width="2"/><text y="-2" fill="#e6f1ed" font-size="11">REVERSE</text><text y="14" fill="#e6f1ed" font-size="11">SHELL</text>
+      <text y="70" fill="#9ab0a8" font-size="12">C2</text>
+    </g>
+    <g transform="translate(680 250)">
+      <circle r="35" fill="#12231f" stroke="#ff6b6b" stroke-width="2"/><text y="-2" fill="#e6f1ed" font-size="11">SYSTEM</text><text y="14" fill="#e6f1ed" font-size="11">PRIV</text>
+      <text y="70" fill="#9ab0a8" font-size="12">JUICYPOTATO</text>
+    </g>
+  </g>
+  <rect x="55" y="390" width="690" height="55" rx="10" fill="#0e1b18" stroke="#203832"/>
+  <text x="78" y="424" fill="#38bdf8" font-family="monospace" font-size="14">MITRE ATT&amp;CK</text>
+  <text x="235" y="424" fill="#e6f1ed" font-family="monospace" font-size="14">T1218.005 → T1059.001 → T1055 → T1068</text>
+</svg>

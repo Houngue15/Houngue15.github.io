@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Site Psycecat</title>
+  <desc id="desc">Maquette stylisée d'un site web éditorial</desc>
+  <rect width="800" height="500" fill="#07110f"/>
+  <rect x="50" y="40" width="700" height="420" rx="18" fill="#fbf8f1"/>
+  <rect x="50" y="40" width="700" height="55" rx="18" fill="#ede9df"/>
+  <circle cx="78" cy="67" r="6" fill="#ff6b6b"/><circle cx="98" cy="67" r="6" fill="#f5c451"/><circle cx="118" cy="67" r="6" fill="#32e6a1"/>
+  <text x="367" y="73" fill="#6b655c" font-family="sans-serif" font-size="14">psycecat.com</text>
+  <text x="85" y="140" fill="#382e26" font-family="serif" font-size="24" font-weight="700">psycecat</text>
+  <text x="510" y="138" fill="#6b655c" font-family="sans-serif" font-size="12">ARTICLES</text>
+  <text x="595" y="138" fill="#6b655c" font-family="sans-serif" font-size="12">CONTACT</text>
+  <rect x="85" y="175" width="630" height="1" fill="#d3ccc0"/>
+  <rect x="85" y="210" width="250" height="185" rx="8" fill="#d8ded5"/>
+  <circle cx="210" cy="290" r="58" fill="#8ca398"/>
+  <path d="M166 307q44-70 88 0" fill="#fbf8f1" opacity=".75"/>
+  <text x="385" y="230" fill="#8b6852" font-family="sans-serif" font-size="12" letter-spacing="2">BIEN-ÊTRE &amp; PSYCHOLOGIE</text>
+  <text x="385" y="275" fill="#382e26" font-family="serif" font-size="33">Comprendre pour</text>
+  <text x="385" y="314" fill="#382e26" font-family="serif" font-size="33">mieux avancer.</text>
+  <rect x="385" y="342" width="275" height="8" rx="4" fill="#c8c0b6"/>
+  <rect x="385" y="363" width="215" height="8" rx="4" fill="#ded8cf"/>
+  <text x="385" y="407" fill="#8b6852" font-family="sans-serif" font-size="13">Lire les publications →</text>
+</svg>
